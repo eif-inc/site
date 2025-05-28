@@ -5,15 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>有限会社EIF</title>
   <style>
-    body { font-family: sans-serif; margin: 0; color: #222; background: #fff; }
-    header, footer { background: #0b1d36; color: #fff; padding: 2rem; text-align: center; }
-    main { padding: 2rem; max-width: 960px; margin: 0 auto; }
-    section { margin-bottom: 3rem; }
-    h1, h2 { color: #0b1d36; }
-    a { color: #0056b3; text-decoration: none; }
-    .image-container { text-align: center; margin-top: 2rem; }
-    .image-container img { max-width: 300px; border-radius: 8px; }
-    ul { padding-left: 1.5rem; }
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700&display=swap');
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      margin: 0;
+      color: #222;
+      background: #fff;
+      font-size: 17px;
+      line-height: 1.8;
+    }
+    header, footer {
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+      background-image: url('https://source.unsplash.com/1600x400/?city,building');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    header::before, footer::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 0;
+    }
+    header h1, footer p, header p {
+      position: relative;
+      z-index: 1;
+    }
+    main {
+      padding: 2rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      color: #0b1d36;
+      border-left: 5px solid #0b1d36;
+      padding-left: 0.5rem;
+      margin-top: 2rem;
+    }
+    a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+    .image-container {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    @media screen and (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.5rem; }
+      body { font-size: 16px; }
+    }
   </style>
 </head>
 <body>
@@ -34,7 +95,7 @@
         <li>メール：info.eif8@gmail.com</li>
       </ul>
       <div class="image-container">
-        <img src="eif_representative2.jpg" alt="代表者写真">
+        <img src="eif_representative.jpg" alt="代表者写真">
       </div>
     </section>
 
@@ -42,7 +103,7 @@
       <h2>代表メッセージ</h2>
       <p>
         企業を成功に導くうえで最も重要なのは「人と人との信頼」です。<br />
-        私自身、株式会社デジタルホールディングス、株式会社フリークアウト・ホールディングス、株式会社モブキャストホールディングスといった複数の企業において、創業・上場という節目に携わってきました。<br />
+        私自身、株式会社デジタルホールディングス、フリークアウト・ホールディングス、モブキャストホールディングスといった複数の企業において、創業・上場という節目に携わってきました。<br />
         現在は、経営支援だけでなく、地方創生・スタートアップ支援・暗号資産分野にまでフィールドを広げ、社会に対して本質的価値を提供することを目指しています。
       </p>
       <p>
@@ -52,7 +113,7 @@
         そんな自分たちでありたいと思っています。<br />
         そして、同じ時を過ごす人たちが少しでも幸せになる、その目標をともに達成できる仲間でありたいと願っています。
       </p>
-      <p>― ファウンダー　海老根 智仁</p>
+      <p>― 海老根 智仁（ファウンダー）</p>
     </section>
 
     <section>
@@ -65,21 +126,6 @@
         <li>地方創生・地方ベンチャー支援</li>
         <li>食品・雑貨のプロダクト開発</li>
         <li>飲食店事業</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>外部リンク</h2>
-      <h3>上場支援実績</h3>
-      <ul>
-        <li><a href="https://digital-holdings.co.jp/" target="_blank">株式会社デジタルホールディングス</a></li>
-        <li><a href="https://www.fout.co.jp/" target="_blank">株式会社フリークアウト・ホールディングス</a></li>
-        <li><a href="https://mobcast.co.jp/" target="_blank">株式会社モブキャストホールディングス</a></li>
-      </ul>
-      <h3>関連企業</h3>
-      <ul>
-        <li><a href="https://www.legend-partners.com/" target="_blank">LEGEND PARTNERS</a></li>
-        <li><a href="https://nes-vc.com/" target="_blank">NES株式会社</a></li>
       </ul>
     </section>
 
